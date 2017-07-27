@@ -10,12 +10,12 @@
 
 
 
-## 参考
+## Reference
 
 [vox.js](https://github.com/daishihmr/vox.js)
 
 
-### mikolalysenko/
+### mikolalysenko
 
 [voxel.js](https://www.npmjs.com/package/voxel)
 [MinecraftMeshes2](https://github.com/mikolalysenko/mikolalysenko.github.com/tree/master/MinecraftMeshes2)
