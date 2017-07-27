@@ -28,17 +28,13 @@ var VOX_URL_LIST = [
     "vox/chr/chr_poem.vox",
 ];
 
-var voxURL_list = [
-    "vox/3x3x3.vox", "vox/8x8x8.vox", "vox/castle.vox", "vox/chr_knight.vox",
-    "vox/chr_old.vox", "vox/chr_rain.vox", "vox/chr_sword.vox"];
 
 var _g;
 if (_g === undefined) _g = {};
 
 window.onload = function () {
     // var voxURL = voxURL_list[parseInt(Math.random() * voxURL_list.length)];
-    var voxURL = voxURL_list[5];
-    // var voxURL = "vox/other/obj_container1.vox";
+    var voxURL = VOX_URL_LIST[2];
 
 
     fetchVoxBuffer(voxURL).then(function (voxBuffer) {
@@ -91,6 +87,7 @@ function testThree(vox) {
         el_showedges.addEventListener('click', function () {
             voxelJS.showedges(el_showedges.checked);
         }, false);
+        el_showedges.click();
 
         // 网格化方式选择器
         var _el_mesher = document.getElementById("mesher");
@@ -149,8 +146,6 @@ function testThree(vox) {
         };
     }
 
-    //
-    // _g.voxelViewer.voxelJS.changeMesher(VoxelJS.MESHERS.Greedy);
 }
 
 function updateSelectValue(elSelect, newValue) {

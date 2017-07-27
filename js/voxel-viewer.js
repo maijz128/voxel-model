@@ -292,7 +292,7 @@ function VoxelViewer(vox, elContainer, width, height) {
     {
         self.threeHelper.camera.position.x = 0;
         self.threeHelper.camera.position.y = -50;
-        self.threeHelper.camera.position.z = 100;
+        self.threeHelper.camera.position.z = 0;
 
         self.threeHelper.scene.background = new THREE.Color("rgb(68, 68, 68)");
 

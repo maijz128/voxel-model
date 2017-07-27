@@ -258,7 +258,7 @@ function ThreeHelper(elContainer, width, height) {
         {
             var dirLight = new THREE.DirectionalLight(0xffffff, 1.0);
             // dirLight.color.setHSL(0.1, 1, 0.95);
-            dirLight.position.set(100, 100, 100);
+            dirLight.position.set(100, -100, 100);
             // dirLight.position.multiplyScalar(50);
             scene.add(dirLight);
             dirLight.castShadow = true;
