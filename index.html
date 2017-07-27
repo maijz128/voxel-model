@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voxel Model</title>
+    <meta name="keywords" content="MagicaVoxel, Voxel">
+    <meta name="author" content="MaiJZ">
+    <link rel="shortcut icon" type="image/x-icon" href="html/favicon.png">
+
+    <link rel="stylesheet" href="html/index.css">
+
+    <script src="lib/three/three.js"></script>
+    <script src="lib/three/Detector.js"></script>
+    <script src="lib/three/stats.min.js"></script>
+    <script src="lib/three/EditorControls.js"></script>
+    <script src="lib/three/TrackballControls.js"></script>
+    <script src="lib/three/TransformControls.js"></script>
+    <script src="lib/three/other/Projector.js"></script>
+    <script src="lib/three/other/SkyShader.js"></script>
+    <!--<script src="lib/three/other/BGShader.js"></script>-->
+
+
+    <!--Mesh algorithms-->
+    <script src="lib/mikolalysenko/MinecraftMeshes2/stupid.js"></script>
+    <script src="lib/mikolalysenko/MinecraftMeshes2/culled.js"></script>
+    <script src="lib/mikolalysenko/MinecraftMeshes2/greedy.js"></script>
+    <script src="lib/mikolalysenko/MinecraftMeshes2/monotone.js"></script>
+    <!--Mesh algorithms testdata-->
+    <script src="lib/mikolalysenko/MinecraftMeshes2/other/testdata.js"></script>
+    <!--Package-->
+    <script src="dest/voxel.js"></script>
+
+
+    <script src="dest/voxel-model.js"></script>
+    <script src="dest/cube-renderer.js"></script>
+    <script src="js/three-helper.js"></script>
+    <script src="js/voxel-viewer.js"></script>
+
+    <script src="html/index.js"></script>
+
+</head>
+<body>
+<div id="voxel-container">
+
+    <!-- info on screen display -->
+    <div id="info">
+        <div class="top left">
+            Minecraft Mesh Algorithm Tester (version 2)
+        </div>
+        <div class="bottom" id="inlineDoc" >
+            - <i>p</i> for screenshot
+        </div>
+        <div class="controls">
+            <p>Data source:</p>
+            <p><select id="datasource"></select></p>
+            <p>Vox Data source:</p>
+            <p><select id="datasource_vox"></select></p>
+            <p>Mesher:</p>
+            <p><select id="mesher"></select></p>
+            <p>Show faces: <input type="checkbox" id="showfacets" value="checked" /></p>
+            <p>Show edges: <input type="checkbox" id="showedges" value="checked" /></p>
+            <p>Vertex count: <input type="text" id="vertcount" value="0" /> </p>
+            <p>Face count: <input type="text" id="facecount" value="0" /> </p>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
